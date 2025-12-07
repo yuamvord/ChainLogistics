@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chain Logistics Guatemala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Paleta basada en tu logo -->
+    <style>
+      :root {
+        --main-dark: #1a1f2b;
+        --main-gold: #b39b6d;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-900 font-sans">
+    <!-- NAVBAR -->
+    <header class="w-full py-4 shadow-sm bg-white">
+      <nav class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="assets/img/LogoPng.png" alt="Logo" width="140" />
+          <p
+            class="font-semibold text-lg tracking-wide"
+            style="color: var(--main-dark)"
+          >
+            Chain Logistics
+          </p>
+        </div>
+
+        <div class="hidden md:flex gap-8 text-ms font-medium">
+          <a href="#servicios" class="hover:text-[var(--main-gold)]"
+            >Servicios</a
+          >
+          <a href="#por-que" class="hover:text-[var(--main-gold)]"
+            >Por qué elegirnos</a
+          >
+          <a href="#contacto" class="hover:text-[var(--main-gold)]">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative bg-[var(--main-dark)] text-white py-24">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Soluciones Logísticas que Impulsan tu Negocio
+          </h1>
+          <p class="mt-4 text-gray-300 text-lg">
+            Servicios de importación, exportación y manejo aduanal con
+            eficiencia y confianza en Guatemala.
+          </p>
+
+          <a
+            href="#contacto"
+            class="mt-6 inline-block bg-[var(--main-gold)] text-white px-6 py-3 rounded-md font-semibold hover:opacity-90"
+          >
+            Contáctanos
+          </a>
+        </div>
+
+        <div class="flex-1">
+          <img
+            src="assets/img/hero-img.jpg"
+            alt="Logística"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="sobre-nosotros" class="py-20 bg-white">
+      <div
+        class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- TEXTO -->
+        <div>
+          <h2 class="text-3xl font-bold mb-6" style="color: var(--main-dark)">
+            Sobre Nosotros
+          </h2>
+
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Somos un grupo de empresas especializadas en Servicio integrado y
+            Asesoría Logística.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed">
+            Contamos con Servicio de Transporte para Recolecciones, Entregas y
+            Transporte Internacional de mercancías, así como Despacho Aduanal de
+            Exportación e Importación, en Puertos, Fronteras y Aeropuerto.
+            Además, ofrecemos Gestión de Seguro de Mercancías Puerta a Puerta,
+            entre otros servicios.
+          </p>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="w-full">
+          <img
+            src="assets/img/about.jpg"
+            alt="Sobre Nosotros"
+            class="rounded-lg shadow-lg w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl font-bold text-center"
+          style="color: var(--main-dark)"
+        >
+          Nuestros Servicios
+        </h2>
+        <p class="text-center text-gray-600 mt-2 mb-12">
+          Soluciones integrales para cada etapa de tu operación logística.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/recoleccion.jpg"
+              alt="Servicio 1"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Recolección</h3>
+            <p class="text-gray-600 text-center">
+              Coordinamos tus importaciones y exportaciones vía aérea, marítima
+              y terrestre.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/flete.jpg"
+              alt="Servicio 2"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">
+              Flete Nacional
+            </h3>
+            <p class="text-gray-600 text-center">
+              Gestión eficiente de trámites aduaneros para una liberación rápida
+              de tu mercancía.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/despacho.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">
+              Despacho de Exportación e Importación
+            </h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/entregas.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">
+              Entregas Locales
+            </h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/paletizado.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Paletizado</h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/maniobras.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Maniobras</h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/almacenaje.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Almacenaje</h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <img
+              src="assets/img/factura.jpg"
+              alt="Servicio 3"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">
+              Factura Comercializadora
+            </h3>
+            <p class="text-gray-600 text-center">
+              Soluciones de almacenamiento y distribución que optimizan tu
+              cadena de suministro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sucursales" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6" style="color: var(--main-dark)">
+          Nuestras Sucursales
+        </h2>
+
+        <p class="text-gray-600 mb-12">
+          Operamos en múltiples puntos estratégicos para brindar cobertura y
+          eficiencia logística.
+        </p>
+
+        <!-- GRID DE SUCURSALES -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Estado de México
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Ecatepeq
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Guanajuato
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              León
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Chiapas
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Ciudad Hidalgo
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Costa Rica
+            </h3>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg py-6 px-4">
+            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
+              Guatemala
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section id="por-que" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl font-bold text-center"
+          style="color: var(--main-dark)"
+        >
+          ¿Por Qué Elegirnos?
+        </h2>
+        <p class="text-center text-gray-600 mt-2 mb-12">
+          Tu carga en manos de expertos.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center">
+            <img
+              src="assets/img/optimizada.jpg"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="font-semibold text-xl mb-2">Optimizadas</h3>
+            <p class="text-gray-600">
+              Años de trayectoria en logística internacional.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="assets/img/adecuadas.jpg"
+              class="mx-auto mb-4 rounded-lg"
+            />
+            <h3 class="font-semibold text-xl mb-2">Seguimiento</h3>
+            <p class="text-gray-600">
+              Actualizaciones constantes de tus embarques.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/img/segura.jpg" class="mx-auto mb-4 rounded-lg" />
+            <h3 class="font-semibold text-xl mb-2">Confianza</h3>
+            <p class="text-gray-600">
+              Transparencia y responsabilidad en cada operación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 bg-gray-100">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2
+          class="text-3xl font-bold text-center"
+          style="color: var(--main-dark)"
+        >
+          Contáctanos
+        </h2>
+        <p class="text-center text-gray-600 mt-2 mb-8">
+          Estamos listos para ayudarte.
+        </p>
+
+        <form class="bg-white shadow-md rounded-lg p-8 grid gap-6">
+          <input
+            class="border p-3 rounded-md"
+            type="text"
+            placeholder="Nombre completo"
+          />
+          <input
+            class="border p-3 rounded-md"
+            type="email"
+            placeholder="Correo electrónico"
+          />
+          <textarea
+            class="border p-3 rounded-md h-32"
+            placeholder="Mensaje"
+          ></textarea>
+
+          <button
+            class="bg-[var(--main-dark)] text-white py-3 rounded-md font-semibold hover:opacity-90"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="relative text-white py-16"
+      style="
+        background-image: url('assets/img/footer-bg.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Overlay oscuro -->
+      <div class="absolute inset-0 bg-black/80"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-10">
+        <!-- Dirección -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+            Dirección
+          </h3>
+          <p class="text-gray-300">
+            *Aquí colocas la dirección exacta de la empresa*
+          </p>
+        </div>
+
+        <!-- Horario -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+            Horario
+          </h3>
+
+          <p class="text-gray-300">De lunes a viernes</p>
+          <p class="text-gray-300 mb-4">8:00 a. m. – 5:00 p. m.</p>
+
+          <p class="text-gray-300">Fines de semana</p>
+          <p class="text-gray-300">Con cita previa</p>
+        </div>
+
+        <!-- Horario de oficina -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+            Horario de oficina
+          </h3>
+          <p class="text-gray-300">
+            Atención personalizada durante los horarios establecidos.
+          </p>
+        </div>
+
+        <!-- Contáctanos -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+            Contáctanos
+          </h3>
+          <p class="text-gray-300">Correo: info@chainlogistics.com</p>
+          <p class="text-gray-300">Tel: +502 0000-0000</p>
+          <p class="text-gray-300">WhatsApp: +502 0000-0000</p>
+        </div>
+      </div>
+
+      <!-- Línea inferior -->
+      <div class="relative text-center text-sm text-gray-400 mt-12">
+        © 2025 Chain Logistics Guatemala — Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
