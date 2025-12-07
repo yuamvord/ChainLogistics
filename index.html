@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
     <title>Chain Logistics Guatemala</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,6 +12,28 @@
       :root {
         --main-dark: #1a1f2b;
         --main-gold: #b39b6d;
+      }
+      .flip-card {
+        perspective: 1000px;
+      }
+
+      .flip-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-inner,
+      .flip-card:active .flip-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-front,
+      .flip-back {
+        backface-visibility: hidden;
+      }
+
+      .flip-back {
+        transform: rotateY(180deg);
       }
     </style>
   </head>
@@ -108,197 +131,213 @@
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2
-          class="text-3xl font-bold text-center"
-          style="color: var(--main-dark)"
-        >
-          Nuestros Servicios
-        </h2>
-        <p class="text-center text-gray-600 mt-2 mb-12">
-          Soluciones integrales para cada etapa de tu operación logística.
-        </p>
 
-        <div class="grid md:grid-cols-3 gap-10">
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/recoleccion.jpg"
-              alt="Servicio 1"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">Recolección</h3>
-            <p class="text-gray-600 text-center">
-              Coordinamos tus importaciones y exportaciones vía aérea, marítima
-              y terrestre.
-            </p>
-          </div>
+    <div class="max-w-6xl mx-auto px-4">
 
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/flete.jpg"
-              alt="Servicio 2"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">
-              Flete Nacional
+    <h2 id="servicios" class="text-3xl font-bold text-center mb-4" style="color: var(--main-dark);">
+      NUESTROS SERVICIOS
+    </h2>
+
+    <p class="text-center text-gray-600 mb-12">
+      Soluciones logísticas para cada necesidad.
+    </p>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+
+      <!-- ===================== TARJETA 1 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/LTL.jpg" alt="Transporte Terrestre" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Transporte Terrestre<br>Carga Consolidada (LTL)
             </h3>
-            <p class="text-gray-600 text-center">
-              Gestión eficiente de trámites aduaneros para una liberación rápida
-              de tu mercancía.
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              El transporte LTL es ideal para empresas que envían volúmenes menores al cupo completo.
+              Permite compartir espacio en furgones, reduciendo costos y optimizando capacidad.
+              Los tiempos son mayores que un FTL, pero es perfecto para operaciones flexibles.
+              <br><br>
+              Se puede realizar en modalidad Nacional e Internacional.
             </p>
           </div>
 
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/despacho.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">
-              Despacho de Exportación e Importación
-            </h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/entregas.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">
-              Entregas Locales
-            </h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/paletizado.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">Paletizado</h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/maniobras.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">Maniobras</h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/almacenaje.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">Almacenaje</h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="assets/img/factura.jpg"
-              alt="Servicio 3"
-              class="mx-auto mb-4 rounded-lg"
-            />
-            <h3 class="text-xl font-semibold text-center mb-2">
-              Factura Comercializadora
-            </h3>
-            <p class="text-gray-600 text-center">
-              Soluciones de almacenamiento y distribución que optimizan tu
-              cadena de suministro.
-            </p>
-          </div>
         </div>
       </div>
-    </section>
 
-    <section id="sucursales" class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-6" style="color: var(--main-dark)">
-          Nuestras Sucursales
-        </h2>
+      <!-- ===================== TARJETA 2 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
 
-        <p class="text-gray-600 mb-12">
-          Operamos en múltiples puntos estratégicos para brindar cobertura y
-          eficiencia logística.
-        </p>
-
-        <!-- GRID DE SUCURSALES -->
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Estado de México
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/cargaCompleta.jpg" alt="Carga Completa" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Carga Completa (FTL)
             </h3>
           </div>
 
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Ecatepeq
-            </h3>
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              El transporte FTL utiliza la capacidad completa de un furgón.  
+              Permite entregas más rápidas, menor manipulación y mayor trazabilidad.
+              Ideal para grandes volúmenes, mercancía sensible, carga peligrosa y productos alimenticios.
+            </p>
           </div>
 
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Guanajuato
-            </h3>
-          </div>
-
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              León
-            </h3>
-          </div>
-
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Chiapas
-            </h3>
-          </div>
-
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Ciudad Hidalgo
-            </h3>
-          </div>
-
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Costa Rica
-            </h3>
-          </div>
-
-          <div class="bg-white shadow-md rounded-lg py-6 px-4">
-            <h3 class="text-xl font-semibold" style="color: var(--main-dark)">
-              Guatemala
-            </h3>
-          </div>
         </div>
       </div>
-    </section>
+
+      <!-- ===================== TARJETA 3 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/intermodal.jpg" alt="Intermodal" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Carga Intermodal (OTM)
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Optimiza el movimiento de mercancías integrando distintas modalidades:
+              marítimo–terrestre, aéreo–terrestre y combinaciones similares.
+              Ofrece eficiencia operativa y continuidad en el transporte.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== TARJETA 4 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/aereo.jpg" alt="Transporte Aéreo" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Transporte Aéreo
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Ideal para mercancías que requieren traslado en el menor tiempo posible.
+              Tiene un costo más elevado, pero brinda máxima rapidez y eficiencia.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== TARJETA 5 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/maritimo.jpg" alt="Transporte Marítimo" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Transporte Marítimo
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Similar al transporte terrestre, permite consolidar mercancías de varios proveedores
+              en un mismo contenedor para optimizar costos y manejo.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== TARJETA 6 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/almacenaje.jpg" alt="Almacenaje" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Almacenaje
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Servicio de almacenaje de carga general y seca,
+              brindando seguridad, control y resguardo adecuado de mercancías.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== TARJETA 7 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/proveedores.jpg" alt="Certificación" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Certificación de Proveedores
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Verificación física de instalaciones, revisión de documentos fiscales
+              e inspección previa de mercancías destinadas a exportación.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== TARJETA 8 ===================== -->
+      <div class="flip-card">
+        <div class="flip-inner bg-white rounded-xl shadow-lg h-80">
+
+          <!-- FRONT -->
+          <div class="flip-front p-6 rounded-xl flex flex-col items-center">
+            <img src="assets/img/despacho.jpg" alt="Despachos" class="mb-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-center" style="color: var(--main-dark);">
+              Despachos de Importación y Exportación
+            </h3>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-back absolute inset-0 bg-white p-6 rounded-xl overflow-y-auto">
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Apoyo en gestiones aduanales, permisos, licencias y clasificación arancelaria.  
+              Acompañamiento en aduanas terrestres, aéreas y marítimas de Guatemala.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- POR QUÉ ELEGIRNOS -->
     <section id="por-que" class="py-20">
@@ -360,23 +399,27 @@
           Estamos listos para ayudarte.
         </p>
 
-        <form class="bg-white shadow-md rounded-lg p-8 grid gap-6">
+        <form id="formWhats" class="bg-white shadow-md rounded-lg p-8 grid gap-6">
           <input
+            id="name"
             class="border p-3 rounded-md"
             type="text"
             placeholder="Nombre completo"
           />
           <input
+            id="email"
             class="border p-3 rounded-md"
             type="email"
             placeholder="Correo electrónico"
           />
           <textarea
+            id="mensaje"
             class="border p-3 rounded-md h-32"
             placeholder="Mensaje"
           ></textarea>
 
           <button
+            id="sendBtn"
             class="bg-[var(--main-dark)] text-white py-3 rounded-md font-semibold hover:opacity-90"
           >
             Enviar Mensaje
@@ -387,65 +430,83 @@
 
     <!-- FOOTER -->
     <footer
-      class="relative text-white py-16"
-      style="
-        background-image: url('assets/img/footer-bg.jpg');
-        background-size: cover;
-        background-position: center;
-      "
-    >
-      <!-- Overlay oscuro -->
-      <div class="absolute inset-0 bg-black/80"></div>
+  class="relative text-white py-16"
+  style="
+    background-image: url('assets/img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  "
+>
+  <!-- Overlay oscuro -->
+  <div class="absolute inset-0 bg-black/80"></div>
 
-      <div class="relative max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-10">
-        <!-- Dirección -->
-        <div>
-          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
-            Dirección
-          </h3>
-          <p class="text-gray-300">
-            *Aquí colocas la dirección exacta de la empresa*
-          </p>
-        </div>
+  <div class="relative max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-10">
+    <!-- Dirección -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+        Dirección
+      </h3>
+      <p class="text-gray-300">
+        18 av 38-50, Zona 12, Guatemala, Guatemala
+      </p>
+    </div>
 
-        <!-- Horario -->
-        <div>
-          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
-            Horario
-          </h3>
+    <!-- Horario -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+        Horario
+      </h3>
 
-          <p class="text-gray-300">De lunes a viernes</p>
-          <p class="text-gray-300 mb-4">8:00 a. m. – 5:00 p. m.</p>
+      <p class="text-gray-300">De lunes a viernes</p>
+      <p class="text-gray-300 mb-4">8:00 a. m. – 5:00 p. m.</p>
 
-          <p class="text-gray-300">Fines de semana</p>
-          <p class="text-gray-300">Con cita previa</p>
-        </div>
+      <p class="text-gray-300">Fines de semana</p>
+      <p class="text-gray-300">Con cita previa</p>
+    </div>
 
-        <!-- Horario de oficina -->
-        <div>
-          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
-            Horario de oficina
-          </h3>
-          <p class="text-gray-300">
-            Atención personalizada durante los horarios establecidos.
-          </p>
-        </div>
+    <!-- Redes sociales -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+        Redes sociales
+      </h3>
 
-        <!-- Contáctanos -->
-        <div>
-          <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
-            Contáctanos
-          </h3>
-          <p class="text-gray-300">Correo: info@chainlogistics.com</p>
-          <p class="text-gray-300">Tel: +502 0000-0000</p>
-          <p class="text-gray-300">WhatsApp: +502 0000-0000</p>
-        </div>
+      <div class="flex gap-4 items-center">
+        <!-- Aquí van tus íconos -->
+        <!-- Ejemplo de estructura (sin íconos reales): -->
+        <a href="#" class="hover:opacity-80">
+          <i class="fi fi-brands-instagram"></i>
+        </a>
+        <a href="#" class="hover:opacity-80">
+          <i class="fi fi-brands-facebook"></i>
+        </a>
+        <a href="#" class="hover:opacity-80">
+          <i class="fi fi-brands-twitter-alt"></i>
+        </a>
       </div>
+    </div>
 
-      <!-- Línea inferior -->
-      <div class="relative text-center text-sm text-gray-400 mt-12">
-        © 2025 Chain Logistics Guatemala — Todos los derechos reservados.
-      </div>
-    </footer>
+    <!-- Contáctanos -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-[var(--main-gold)]">
+        Contáctanos
+      </h3>
+      <p class="text-gray-300">
+        <a href="mailto:ventas@chainlogistics.com.gt">Correo: info@chainlogistics.com</a>
+      </p>
+      <p class="text-gray-300">
+        <a href="https://wa.me/50224783889?text=Hola%2C%20quiero%20más%20información">
+          Tel: +502 2478 3889
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Línea inferior -->
+  <div class="relative text-center text-sm text-gray-400 mt-12">
+    © 2025 Chain Logistics Guatemala — Todos los derechos reservados.
+  </div>
+</footer>
+
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
