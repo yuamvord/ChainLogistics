@@ -41,28 +41,27 @@
   <body class="bg-white text-gray-900 font-sans">
     <!-- NAVBAR -->
     <header class="w-full py-4 shadow-sm bg-white">
-      <nav class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <img src="assets/img/LogoPng.png" alt="Logo" width="140" />
-          <p
-            class="font-semibold text-lg tracking-wide"
-            style="color: var(--main-dark)"
-          >
-            Chain Logistics
-          </p>
-        </div>
+  <nav class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="assets/img/LogoPng.png" alt="Logo" width="140" />
+      <p class="font-semibold text-lg tracking-wide" style="color: var(--main-dark)">
+        Chain Logistics
+      </p>
+    </div>
 
-        <div class="hidden md:flex gap-8 text-ms font-medium">
-          <a href="#servicios" class="hover:text-[var(--main-gold)]"
-            >Servicios</a
-          >
-          <a href="#por-que" class="hover:text-[var(--main-gold)]"
-            >Por qué elegirnos</a
-          >
-          <a href="#contacto" class="hover:text-[var(--main-gold)]">Contacto</a>
-        </div>
-      </nav>
-    </header>
+    <!-- Menú siempre visible, se adapta y se va abajo en móvil -->
+    <div class="flex gap-6 text-ms font-medium flex-wrap justify-center md:justify-end">
+      <a href="#servicios" class="hover:text-[var(--main-gold)]">Servicios</a>
+      <a href="#por-que" class="hover:text-[var(--main-gold)]">Por qué elegirnos</a>
+      <a href="#sobre-nosotros" class="hover:text-[var(--main-gold)]">Sobre Nosotros</a>
+      <a href="#contacto" class="hover:text-[var(--main-gold)]">Contacto</a>
+    </div>
+
+  </nav>
+</header>
+
 
     <!-- HERO -->
     <section class="relative bg-[var(--main-dark)] text-white py-24">
@@ -473,14 +472,11 @@
       <div class="flex gap-4 items-center">
         <!-- Aquí van tus íconos -->
         <!-- Ejemplo de estructura (sin íconos reales): -->
-        <a href="#" class="hover:opacity-80">
+        <a href="https://www.instagram.com/chainlogisticsgt/?igsh=NXJ0dDU2N21keHlv#" class="hover:opacity-80">
           <i class="fi fi-brands-instagram"></i>
         </a>
-        <a href="#" class="hover:opacity-80">
+        <a href="https://www.facebook.com/profile.php?id=61579930821920#" class="hover:opacity-80">
           <i class="fi fi-brands-facebook"></i>
-        </a>
-        <a href="#" class="hover:opacity-80">
-          <i class="fi fi-brands-twitter-alt"></i>
         </a>
       </div>
     </div>
